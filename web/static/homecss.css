@@ -1,0 +1,229 @@
+body {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 40px 1fr 50px;
+    grid-template-areas: 
+        "header header header header header"
+        "content content content content content"
+        "footer footer footer footer footer";
+}
+
+.fixed-header {
+    grid-area: header;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    z-index: 1000;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: 1fr 60% 1fr;
+}
+
+.header-content .trang-chu {
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.header-content .item {
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: bisque;
+}
+
+.item a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: bisque;
+    
+}
+
+main {
+    grid-area: content ;
+    
+}
+
+.slider {
+    position: relative;
+}
+
+main img {
+    max-width: 40%;  
+    height: auto;  
+    float: right;  
+    margin-top: 9px;  
+    margin-right: 20px;
+    margin-left: -8px;
+}
+
+
+#slider {
+    margin-top: 50px;
+    position: relative
+}
+
+section.hero_2021 div.text h1:after {
+    background-image: url(https://f.hubspotusercontent20.net/hubfs/6968579/Memrise%20July%202020/Images/blue-flash.svg);
+    content: " ";
+    display: block;
+}
+
+section.hero_2021 {
+    margin: 0 auto;
+    padding: 0
+}
+
+section.hero_2021 .statistics__stars {
+    display: flex;
+    justify-content: space-between
+}
+
+section.hero_2021 .row-fluid {
+    position: relative
+}
+
+section.hero_2021 {
+    --horizontal-padding: 40px;
+    background: none;
+    position: relative;
+    z-index: 10;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+section.hero_2021 div.background {
+    align-items: center;
+    display: flex;
+    margin: auto;
+    max-width: 1104px;
+    min-height: 711px;
+    
+}
+
+section.hero_2021 div.text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 75px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 300px;
+}
+
+section.hero_2021 div.text h1 {
+    color: #2b3648;
+    font-family: Boing;
+    font-size: 65px;
+    font-style: normal;
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    position: relative;
+    padding-right: 367px;
+    text-align: center;
+    transform: rotate(-2deg);
+    
+}
+
+section.hero_2021 .v3-girl-hero-image,
+section.hero_2021 .v3-girl-hero-image-tablet {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 320px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%
+}
+
+section.hero_2021 .v3-girl-hero-image-tablet {
+    background-size: cover;
+/*    display: none;*/
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 48%;
+    z-index: -1;
+}
+
+
+section.hero_2021 button.button-primary {
+    background-color: #ffc000;
+    border: 2px solid #ffc000;
+    border-radius: 20px;
+    color: #293749;
+/*    margin: 15px auto;*/
+    height: 53px;
+    width: 272px;
+    padding: 0;
+    transform: scale(1) rotate(0deg)
+}
+section.hero_2021 button.button-primary:hover {
+    animation: mem-hover .3s;
+    background-color: #ffe080;
+    border: 2px solid #ffe080
+}
+
+section.hero_2021 button.button-primary:focus {
+    border: 2px solid #fff;
+    outline: 0
+}
+
+section.hero_2021 button.button-primary:active {
+    border: 2px solid #2b3648;
+    transition: .1s
+}
+
+.language-box {
+    align-items: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 30px 0
+}
+
+
+.button-primary {
+    height: 68px
+}
+
+section.hero_2021 button.button-primary {
+    font-size: 20px; /* Thêm hoặc điều chỉnh giá trị font-size theo mong muốn */
+}
+.register1,
+.login1{
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+
+.register1:hover,
+.login1:hover,
+#register1:active,
+#login1:active {
+    color: #ffe080;
+    transform: scale(1.2);
+}
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    width: 100%;
+}

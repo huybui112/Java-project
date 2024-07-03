@@ -1,0 +1,265 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+
+body {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 40px 1fr 50px;
+    grid-template-areas:
+        "header header header header header"
+        "content content content content content"
+        "footer footer footer footer footer";
+}
+
+.fixed-header {
+    grid-area: header;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Căn giữa theo chiều ngang và chia khoảng cách giữa các phần tử */
+}
+
+.header-content .trang-chu {
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    margin-top: 1px;
+    margin-left:90px;
+}
+
+.header-content .item {
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    /*    justify-content: left;*/
+    color: bisque;
+}
+
+.right a{
+    text-decoration: none;
+    margin-right: 40px;
+    color: bisque;
+    font-size: 24px;
+}
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    width: 100%;
+
+}
+
+main {
+    grid-area: content ;
+    margin-bottom: 200px;
+}
+.select-list{
+    display: flex;
+    flex-direction: column;
+}
+.select-list .title{
+    font-size: 30px;
+    text-align: center; /* Căn giữa theo chiều ngang */
+    line-height: 1.5;
+}
+.select-list select{
+    width: 30%;
+    height: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 2px solid #00d2c8;
+}
+
+.list-courses{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    column-gap: 30px;
+    margin-bottom: 100px;
+}
+.list-courses .item-card {
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
+    width: 800px; /* Đặt chiều rộng tối đa nếu cần */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+    transition: box-shadow 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.list-courses .item-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng khi hover */
+}
+
+.item-card .card {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.item-card .name {
+    flex: 1;
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 0; /* Tạo khoảng cách giữa các phần tử */
+}
+
+.item-card .name a {
+    text-decoration: none;
+    color: #333; /* Màu chữ cho đường link */
+}
+
+.item-card .process {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.item-card .process p {
+    flex: 1;
+    text-align: center;
+}
+
+.item-card .card-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    margin-top: 15px; /* Tạo khoảng cách giữa các phần tử */
+    margin-bottom: 30px;
+}
+
+.item-card .card-btn a {
+    margin: 0 10px; /* Tạo khoảng cách giữa các nút */
+    padding: 10px 20px; /* Đặt kích thước đệm của nút */
+    text-decoration: none;
+    background-color: goldenrod;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-card .card-btn a:hover,
+.item-card .card-btn a:focus {
+    background-color: #FFD700;
+    color: #333;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+}
+
+.item-card .card-btn button {
+    flex: 1;
+    justify-content: space-around;
+    margin: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 20px;
+}
+.trang-chu, .item,.team1,.team2,.team3
+{
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    justify-content:center;
+}
+.team1:hover,
+.team1:active,
+.team2:hover,
+.team2:active,
+.team3:hover,
+.team3:active,
+.item:hover,
+.item.active,
+.trang-chu:hover,
+.trang-chu:active
+{
+    color: #ffe080;
+    transform: scale(1.2);
+    justify-content:center;
+}
+
+.select-list select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #00d2c8;
+    font-size: 16px;
+}
+.select-list select:hover,
+.select-list select:focus {
+    border-color: #4CAF50; /* Màu sắc khi hover hoặc focus */
+}
+.select-list select option:checked {
+    background-color: #4CAF50; /* Màu nền khi chọn */
+    color: white; /* Màu chữ khi chọn */
+}
+.select-list select {
+    transition: border-color 0.3s ease; /* Hiệu ứng khi chuyển đổi màu sắc */
+}
+.select-list input[type="submit"] {
+    background-color: goldenrod; /* Màu nền của nút */
+    color: #333; /* Màu chữ của nút */
+    padding: 15px; /* Kích thước đệm của nút */
+    border: none; /* Loại bỏ đường viền */
+    border-radius: 5px; /* Bo tròn góc */
+    cursor: pointer; /* Biến con trỏ thành bàn tay khi di chuột qua nút */
+    font-size: 16px; /* Kích thước chữ */
+
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.select-list input[type="submit"]:hover,
+.select-list input[type="submit"]:focus {
+    background-color: #FFD700; /* Một tông màu goldenrod khác để làm nổi bật hơn */
+    color: #fff; /* Màu chữ trắng khi hover */
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.5); /* Hiệu ứng shadow khi hover */
+}
+.select-list input[type="submit"] {
+    transition: background-color 0.3s ease; /* Hiệu ứng khi chuyển đổi màu sắc */
+}
+.select-list form {
+    text-align: center; /* Căn giữa theo chiều ngang */
+}
+
+.select-list form select,
+.select-list form input[type="submit"] {
+    margin: 10px 0; /* Tạo khoảng cách giữa các phần tử */
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ddd;
+    margin: 10px 0;
+    width: 524px;
+     margin: 26px auto;
+     margin-top:50px;
+}
+a{
+    text-decoration:none;
+    color:#007BFF;
+    margin-left:10px;
+}

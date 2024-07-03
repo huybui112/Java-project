@@ -1,0 +1,249 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 6, 2023, 7:50:17 PM
+    Author     : nhanv
+*/
+
+body {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 40px 1fr 50px;
+    grid-template-areas:
+        "header header header header header"
+        "content content content content content"
+        "footer footer footer footer footer";
+}
+
+.fixed-header {
+    grid-area: header;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Căn giữa theo chiều ngang và chia khoảng cách giữa các phần tử */
+}
+
+.header-content .trang-chu {
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    margin-top: 1px;
+}
+
+.header-content .item {
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+/*    justify-content: left;*/
+    color: bisque;
+}
+
+.right a{
+    text-decoration: none;
+    margin-right: 40px;
+    color: bisque;
+    font-size: 24px;
+}
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    width: 100%;
+
+}
+
+
+.main-content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 300px;
+}
+
+form {
+    text-align: center;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+label {
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+input[type="description"],
+input[type="submit"] {
+
+    padding: 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.voca1{
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left:67px;
+}
+.voca{
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.title{
+    padding: 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+.button{
+    text-decoration: none;
+    color: windowframe;
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.ques{
+    font-size: 20px;
+    margin-left:-7px;
+    margin-bottom: 33px;
+}
+.thea,.thec{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.theb,.thed{
+    margin-left: 7px;
+}
+.thecheck{
+    margin-left: 7px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.inques{
+    margin-left:11px;
+    padding:15px 100px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.inthe{
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.marginques{
+    margin-top:25px;
+    margin-bottom: 25px;
+}
+.marginans{
+    margin-left: 15px;
+}
+.them{
+    text-decoration: none;
+    color: windowframe;
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-top:25px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.margintop{
+    margin-top: 25px;
+}
+.paddingvoca{
+    margin-left: 15px;
+
+}
+.paddingvoca1{
+    margin-right: 38px;
+}
+.xoaad{
+    margin-left:22px;
+}
+.sub {
+    background-color: goldenrod;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sub:hover {
+    background-color: #FFD700; /* Một tông màu goldenrod khác để làm nổi bật hơn */
+    color: #fff; /* Màu chữ trắng khi hover */
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.5); /* Hiệu ứng shadow khi hover */
+}
+.trang-chu, .item,.team1,.team2
+{
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    justify-content:center;
+}
+.team1:hover,
+.team1:active,
+.team2:hover,
+.team2:active,
+.item:hover,
+.item.active,
+.trang-chu:hover,
+.trang-chu:active
+{
+    color: #ffe080;
+    transform: scale(1.2);
+    justify-content:center;
+}

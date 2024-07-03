@@ -1,0 +1,97 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 25, 2023, 2:26:36 AM
+    Author     : Acer
+*/
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button-xac-thuc {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 20px;
+}
+.lef-align {
+    text-align: left;
+}
+.Back-link{
+    text-decoration: none;
+}
+input[type="text"],
+input[type="submit"] {
+    
+    padding: 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form:hover {
+    box-shadow: none; /* Loại bỏ hiệu ứng shadow khi hover trên form */
+}
+
+input[type="text"]:hover,
+input[type="submit"]:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng shadow khi hover trên ô nhập liệu và nút Submit */
+}
+input[type="submit"] {
+    background-color: goldenrod;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFD700; /* Một tông màu goldenrod khác để làm nổi bật hơn */
+    color: #fff; /* Màu chữ trắng khi hover */
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.5); /* Hiệu ứng shadow khi hover */
+}

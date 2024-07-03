@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+<web-app>
+  <!-- Đăng ký Servlet -->
+  <servlet>
+    <servlet-name>webhoctap</servlet-name>
+    <servlet-class>com.example.webhoctap</servlet-class>
+  </servlet>
+  
+  <!-- Định nghĩa URL pattern cho Servlet -->
+  <servlet-mapping>
+    <servlet-name>webhoctap</servlet-name>
+    <url-pattern>/webhoctap</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Cấu hình điều hướng trang lỗi -->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/e404.jsp</location>
+  </error-page>
+  
+  <error-page>
+    <error-code>500</error-code>
+    <location>/e500.jsp</location>
+  </error-page>
+</web-app>

@@ -1,0 +1,142 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 10, 2023, 10:57:04 PM
+    Author     : nhanv
+*/
+
+body {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 40px 1fr 50px;
+    grid-template-areas: 
+        "header header header header header"
+        "content content content content content"
+        "footer footer footer footer footer";
+}
+
+.fixed-header {
+    grid-area: header;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: 1fr 60% 1fr;
+}
+
+.header-content .trang-chu {
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.header-content .item {
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: bisque;
+}
+
+.right a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: bisque;
+    font-size: 20px;
+}
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    
+}
+
+
+main {
+    grid-area: content ;
+    margin-bottom: 400px;
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Set form to take up the full width and height of the main content */
+form {
+    width: 100%;
+    height: 100%;
+}
+
+/* Adjust the styling for the grid container and label */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.form-center{
+    margin-top: 40px;
+    position: absolute;
+    width: 95%;
+    height: 45%;
+    margin-left: 25px;
+}
+
+.submit-form{
+    position: relative;
+    top: 450px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: goldenrod;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.submit-form:hover{
+    background-color: #FFD700; /* Một tông màu goldenrod khác để làm nổi bật hơn */
+    color: #fff; /* Màu chữ trắng khi hover */
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.5); /* Hiệu ứng shadow khi hover */
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Set the width of the label to take up the full width of its container */
+    height: 70px;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: buttonface;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+/* Style the selected answer option */
+label.selected {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #3498db;
+}
